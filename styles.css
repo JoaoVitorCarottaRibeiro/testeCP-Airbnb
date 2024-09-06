@@ -1,0 +1,414 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 5px;
+    padding: 15px 6%;
+    box-shadow: rgba(0,0,0,0.08) 0 1px 1px;
+}
+
+body{
+    background-color: white;
+    font-family: "Roboto", sans-serif;
+}
+
+.logo{
+    margin-left: 15px;
+    margin-top: 1px;
+}
+
+.busca-site{
+    background-color: white;
+    border-radius: 50px;
+    width: 450px;
+    padding: 10px;
+    font-size: 16px;
+    color: #222222;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0px 0.5px 0px 1px rgb(190, 189, 189);
+    margin-left: 140px;
+}
+
+.hospedes{
+    color: gray;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.links{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    padding: 0 10px;
+    position: relative;
+    font-weight: 400;
+}
+
+.btnHeader{
+    padding: 10px;
+    background-color: #FF385c;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+}
+
+.links::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 20px;
+    width: 1px;
+    background-color: gray;
+}
+
+.anuncio{
+    padding: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #222222;
+    background: transparent;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.anuncio:hover{
+    background-color: rgb(243, 243, 243);
+}
+
+.globo{
+    background: transparent;
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+}
+
+.globo:hover{
+    background-color: rgb(243, 243, 243); 
+}
+
+.btnLogin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 86px;
+    height: 46px;
+    background: transparent;
+    border: 1px solid gray;
+    border-radius: 50px;
+    padding: 1px;
+    cursor: pointer;
+    gap: 8px;
+    margin-right: 15px;
+}
+
+.btnLogin img {
+    height: 32px;
+    width: auto; 
+}
+
+.botoes{
+    display: flex;
+}
+
+/* -------------------------------------------------- */
+
+.container{
+    width: 83%;
+    margin: 0 auto;
+    padding-top: 24px;
+}
+
+.box-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-title h1 {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.interections{
+    display: flex;
+    gap: 10px;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-left: 20px;
+}
+
+.btn a {
+    font-size: 1rem;
+    color: #222;
+}
+
+.photos{
+    display: grid;
+    grid-template-rows: 1.5fr;
+    grid-template-columns: 2fr 1fr 2fr 310px;
+    margin-top: 30px;
+    gap: 10px;
+}
+
+.photos div{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.photos img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img1{
+    grid-row: 1/3;
+    grid-column: 1/3;
+    
+}
+
+.img1 img{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+
+.img3 img{
+    border-top-right-radius: 10px;
+}
+
+.img5 img{
+    border-bottom-right-radius: 10px;
+}
+
+/* ------------------------------------------------- */
+
+.container2{
+    width: 83%;
+    margin: 0 auto;
+    padding-top: 24px;
+    padding: 32px 0px;
+}
+.mini-descricao{
+    width: 60%;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.titulo-descricao{
+    font-size: 23px;
+    color: #222222;
+}
+
+.texto-descricao{
+    margin-top: 5px;
+    color: #222222;
+    font-size: 17px;
+}
+
+.estrela{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.span-descricao{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.estrela a {
+    color: #222222;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.anfitriao{
+    display: flex;
+    gap: 24px;
+    margin-bottom: 20px;
+}
+
+.texto-anfitriao{
+    font-size: 17px;
+    color: #222222;
+    font-weight: 500;
+}
+
+.anos-hospedados{
+    font-size: 15px;
+    color: #6A6A6A;
+    margin-top: 4px;
+}
+
+.anfitriao-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: 3px;
+}
+
+.detalhes{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 60%;
+    border-top: 1px solid #ddd;
+    padding: 20px 0px;
+}
+
+.titulo-detalhes{
+    font-size: 17px;
+    color: #222222;
+    font-weight: 500;
+}
+
+.textos-detalhes{
+    margin-top: 20px;
+}
+
+.texto-detalhes{
+    font-size: 15px;
+    color: #6A6A6A;
+    padding-top: 4px;
+}
+
+.detalhes2{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.detalhes2 .icon {
+    width: 24px;
+    height: 24px;
+}
+
+.detalhes p{
+    margin: 0;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.aproveitar{
+    width: 60%;
+    border-top: 1px solid #ddd;
+    padding-bottom: 23px;
+    margin-bottom: 15px;
+}
+
+.texto-aproveitar{
+    width: 605px;
+    margin-top: 25px;
+    color: #222222;
+    font-size: 17px;
+}
+
+.aproveitar-ancora{
+   display: flex;
+   align-items: center;
+   gap: 3px;
+   font-size: 18px;
+   font-weight: 500;
+   text-decoration: underline;
+   cursor: pointer;
+}
+
+.fotos{
+    width: 60%;
+    border-top: 1px solid #ddd;
+    padding-bottom: 25px;
+    margin-bottom: 15px;  
+}
+
+.titulo-fotos{
+    font-size: 23px;
+    color: #222222;
+    padding-top: 45px;
+    
+}
+
+.fotografias{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.quartos{
+    width: 327px;
+    height: 230px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.nome-quartos{
+    display: flex;
+    align-items: center;
+    gap: 285px;
+}
+
+.titulo-quartos{
+    font-size: 17px;
+    color: #222222;
+    font-weight: 500;
+    padding-top: 20px;
+}
+
+.descricao-quartos{
+    display: flex;
+    align-items: center;
+    gap: 65px;
+    flex-wrap: nowrap;
+}
+
+.texto-quartos{
+    font-size: 15px;
+    color: #222222;
+    padding-top: 4px; 
+}
+
+.oferecimento{
+    width: 60%;
+    border-top: 1px solid #ddd;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.titulo-oferecimento{
+    font-size: 23px;
+    color: #222222;
+    padding-top: 45px;
+}
+
+.textos-oferecimentos{
+    font-size: 18px;
+    color: #222222;
+}
+
