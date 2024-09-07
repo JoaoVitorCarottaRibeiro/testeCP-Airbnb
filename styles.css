@@ -393,22 +393,51 @@ body{
     color: #222222;
     padding-top: 4px; 
 }
-
-.oferecimento{
+/* -------------------------------------------------------------------- */
+.oferecimento {
     width: 60%;
     border-top: 1px solid #ddd;
     padding-bottom: 15px;
     margin-bottom: 15px;
+    display: block;
+    display: grid;
+    grid-template-columns: auto 1fr; 
+    grid-template-rows: repeat(6, auto); 
+    align-items: center;
+    gap: 50px;
+    
 }
 
-.titulo-oferecimento{
+.titulo-oferecimento {
     font-size: 23px;
     color: #222222;
     padding-top: 45px;
+    grid-column: 1 / -1; 
 }
 
-.textos-oferecimentos{
+.textos-oferecimentos,
+.textos-oferecimentos2 {
     font-size: 18px;
     color: #222222;
+    display: flex;
+    align-items: center; 
+}
+
+.oferecimento svg {
+    margin-right: 8px;
+}
+
+.oferecimento span {
+    display: flex;
+    align-items: center; 
+}
+
+.comodidades{
+    display: flex;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+    justify-content: center;
 }
 
